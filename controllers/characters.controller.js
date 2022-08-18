@@ -31,7 +31,6 @@ module.exports.doAddNew = (req, res, next) => {
 };
 
 module.exports.delete = (req, res, next) => {
-  res.send("puts");
   const { id } = req.params;
   apiService
     .deleteCharacter(id)
