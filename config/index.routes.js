@@ -1,6 +1,10 @@
 const router = require("express").Router();
-const miscController = require("../controllers/misc.controller");
+const charController = require("../controllers/characters.controller");
 
-router.get("/", miscController.home);
+//LIST OF DATA
+router.get("/", charController.home);
+router.get("/newcharacter", charController.addNew);
+router.post("/newcharacter", charController.doAddNew);
+router.delete("/character/:id", charController.delete);
 
 module.exports = router;

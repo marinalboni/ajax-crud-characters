@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <h1>CREATE NEW CHARACTER</h1>
+    <div class="container mt-4"></div>
+        <form action="/newcharacter" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Write a name">
+            </div>
+            <div class="form-group">
+                <label for="occupation">Ocuppation</label>
+                <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Their ocuppation">
+            </div>
+            <div class="form-group">
+                <label for="weapon">Weapon</label>
+                <input type="text" class="form-control" id="weapon" name="weapon" placeholder="Weapon of choice">
+            </div>
+            <div class="form-group">
+                <label for="debt">Has a debt:</label>
+                <select multiple class="form-control" id="debt" name="debt">
+                <option>true</option>
+                <option>false</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
